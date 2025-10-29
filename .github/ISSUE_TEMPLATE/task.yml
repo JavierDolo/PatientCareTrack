@@ -1,8 +1,8 @@
 ---
-name: Task: Proyecto Residencia
-description: Crea una tarea para el proyecto Residencia (Java + React)
+name: "Task: Proyecto Residencia"
+description: "Crea una tarea para el proyecto Residencia (Java + React)"
 title: "[Task] "
-labels: 
+labels:
   - task
 assignees: []
 body:
@@ -22,10 +22,10 @@ body:
     id: area
     attributes:
       label: Área
+      description: Selecciona el área del proyecto
       options:
-        - Backend (Spring Boot)
-        - Frontend (React)
-        - Documentación
+        - Backend (Java - Spring Boot)
+        - Frontend (React.js)
     validations:
       required: true
 
@@ -33,50 +33,12 @@ body:
     id: priority
     attributes:
       label: Prioridad
+      description: Define la prioridad de esta tarea
       options:
         - Alta
         - Media
         - Baja
-      default: 1
     validations:
       required: true
 
-  - type: input
-    id: estimate
-    attributes:
-      label: Estimación
-      placeholder: "Ej: 3h o 5 puntos"
-
-  - type: textarea
-    id: description
-    attributes:
-      label: Descripción
-      description: Explica qué hay que hacer exactamente
-      placeholder: "Detalles de la tarea..."
-    validations:
-      required: true
-
-  - type: textarea
-    id: subtasks
-    attributes:
-      label: Subtareas (checklist)
-      description: Una por línea; se convertirá en checklist
-      value: |
-        - [ ] Paso 1
-        - [ ] Paso 2
-        - [ ] Paso 3
-
-  - type: textarea
-    id: acceptance
-    attributes:
-      label: Criterios de aceptación
-      description: ¿Cómo sabremos que está hecho?
-      placeholder: |
-        - El login devuelve JWT válido
-        - Devuelve 401 si credenciales incorrectas
-
-  - type: textarea
-    id: context
-    attributes:
-      label: Contexto adicional
-      description: Links a PRs, diseños, decisiones, etc.
+  - type: text
