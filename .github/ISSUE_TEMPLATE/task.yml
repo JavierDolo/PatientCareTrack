@@ -1,7 +1,9 @@
+---
 name: Task: Proyecto Residencia
 description: Crea una tarea para el proyecto Residencia (Java + React)
 title: "[Task] "
-labels: ["task"]
+labels: 
+  - task
 assignees: []
 body:
   - type: dropdown
@@ -44,8 +46,6 @@ body:
     attributes:
       label: Estimación
       placeholder: "Ej: 3h o 5 puntos"
-    validations:
-      required: false
 
   - type: textarea
     id: description
@@ -65,8 +65,6 @@ body:
         - [ ] Paso 1
         - [ ] Paso 2
         - [ ] Paso 3
-    validations:
-      required: false
 
   - type: textarea
     id: acceptance
@@ -76,14 +74,9 @@ body:
       placeholder: |
         - El login devuelve JWT válido
         - Devuelve 401 si credenciales incorrectas
-    validations:
-      required: false
 
   - type: textarea
     id: context
     attributes:
       label: Contexto adicional
       description: Links a PRs, diseños, decisiones, etc.
-    validations:
-      required: false
-
