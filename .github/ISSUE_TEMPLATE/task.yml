@@ -1,5 +1,5 @@
 ---
-name: "Task - Proyecto Residencia"
+name: "Task: Proyecto Residencia"
 description: "Crea una tarea para el proyecto Residencia (Java + React)"
 title: "[Task] "
 labels:
@@ -54,7 +54,7 @@ body:
     id: steps
     attributes:
       label: Pasos
-      description: Lista de pasos sugeridos para esta tarea
+      description: Lista los pasos sugeridos para esta tarea
       placeholder: |
         1. Crear endpoint en backend
         2. Configurar seguridad en Spring
