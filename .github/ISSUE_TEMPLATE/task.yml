@@ -1,5 +1,5 @@
 ---
-name: "Task: Proyecto Residencia"
+name: "Task - Proyecto Residencia"
 description: "Crea una tarea para el proyecto Residencia (Java + React)"
 title: "[Task] "
 labels:
@@ -41,4 +41,32 @@ body:
     validations:
       required: true
 
-  - type: text
+  - type: textarea
+    id: description
+    attributes:
+      label: Descripción
+      description: Explica brevemente la tarea a realizar
+      placeholder: "Ejemplo: Implementar login con JWT en el backend"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Pasos
+      description: Lista de pasos sugeridos para esta tarea
+      placeholder: |
+        1. Crear endpoint en backend
+        2. Configurar seguridad en Spring
+        3. Probar con Postman
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Resultado esperado
+      description: Explica el resultado que debe obtenerse si la tarea está bien implementada
+      placeholder: "Ejemplo: Usuario puede iniciar sesión y obtener un JWT válido"
+    validations:
+      required: true
